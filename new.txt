@@ -6,3 +6,8 @@ haha
 cherry1
 cherry2
 cherry3
+<<<<<<< HEAD
+=======
+
+cherry4
+>>>>>>> a4dc586 (cherry4)
