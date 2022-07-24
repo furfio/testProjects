@@ -4,9 +4,5 @@ yes
 
 haha
 cherry1
-<<<<<<< HEAD
 cherry2
 cherry3
-=======
-cherry2
->>>>>>> ad3b442 (cherry2)
