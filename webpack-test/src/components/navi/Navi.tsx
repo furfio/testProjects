@@ -26,7 +26,14 @@ function getItem(
 
 const items: MenuProps['items'] = [
   getItem('Test', 'sub1', <MailOutlined />, [
-    getItem('Test', 'g1', null, [getItem('Todo', RouterPath.Todo), getItem('Faq', RouterPath.Faq)], 'group'),
+    getItem('Test', 'g1', null,
+      [
+        getItem('Todo', RouterPath.Todo),
+        getItem('Counter', RouterPath.Counter),
+        getItem('Faq', RouterPath.Faq),
+        getItem('Map', RouterPath.Map),
+      ], 
+      'group'),
     getItem('Item 2', 'g2', null, [getItem('Option 3', '3'), getItem('Option 4', '4')], 'group'),
   ]),
 

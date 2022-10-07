@@ -81,22 +81,7 @@
   
   .Todo-task.completed {
     opacity: 0.6;
-  }
-  .Todo-task.completed:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -0.5rem;
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: #fff;
-    animation: strikeitem 0.2s ease-out 0s forwards;
-  }
-  @keyframes strikeitem {
-    to {
-      width: calc(100% + 1rem);
-    }
+    text-decoration:line-through;
   }
 
   /* button */
