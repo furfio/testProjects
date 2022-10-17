@@ -1,7 +1,7 @@
+using JwtLogin.Entity;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication6_1.Entity;
 
-namespace WebApplication6_1.Controllers
+namespace JwtLogin.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -19,7 +19,7 @@ namespace WebApplication6_1.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

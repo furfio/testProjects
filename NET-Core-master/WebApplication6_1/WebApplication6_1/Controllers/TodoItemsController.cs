@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WebApplication6_1;
+using WebApplication6_1.Entity;
 using WebApplication6_1.Models;
 
 namespace WebApplication6_1.Controllers

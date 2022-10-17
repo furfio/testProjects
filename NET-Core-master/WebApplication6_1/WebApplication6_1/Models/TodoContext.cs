@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.CodeAnalysis;
+using WebApplication6_1.Entity;
 
 namespace WebApplication6_1.Models
 {

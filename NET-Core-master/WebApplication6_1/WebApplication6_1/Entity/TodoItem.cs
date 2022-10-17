@@ -1,4 +1,4 @@
-﻿namespace WebApplication6_1
+﻿namespace WebApplication6_1.Entity
 {
     public class TodoItem
     {
