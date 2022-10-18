@@ -1,0 +1,19 @@
+.UserPanel {
+    width: 15%;
+    float: right;
+    display: flex;
+}
+
+.UserButton {
+    width: 30%;
+    height: 70px;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    line-height: 70px;
+    text-align: center;
+}
+.UserButton:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

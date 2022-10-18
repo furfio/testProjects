@@ -1,9 +1,13 @@
 .Navi {
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
     padding-top: 20px;
+}
+.Header {
+    height: 70px;
+    background-color: rgb(117, 119, 119);
 }
 .main {
     margin-left: 256px;

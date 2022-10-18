@@ -6,4 +6,6 @@ export enum RouterPath {
     Faq = "/test/faq",
     Counter = "/test/counter",
     Map = "/test/map",
+    Login = "/login",
+    Register = "/register"
 }
