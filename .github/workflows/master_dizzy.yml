@@ -26,8 +26,7 @@ jobs:
           npm install yarn
           cd ./webpack-test
           yarn install
-          yarn run build
-          yarn run test
+          yarn start
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
