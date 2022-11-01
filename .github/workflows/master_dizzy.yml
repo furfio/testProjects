@@ -25,7 +25,7 @@ jobs:
         run: |
           npm install yarn
           cd ./webpack-test
-          yarn
+          yarn install
           yarn run build
           yarn run test
 
