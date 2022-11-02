@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { APIs } from "../../API/API";
 import { message } from "antd";
+import { useNavigate } from 'react-router-dom';
+import { RouterPath } from "../../router/router";
 import "./User.css";
 
 const Register = () => {
@@ -9,6 +11,12 @@ const Register = () => {
     const [lastName, setLastName] = useState('');
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate();
+
+    const goto = (url: string) => {
+      navigate(url);
+    };
 
     const register = () => {
         axios.post(APIs.register, {
@@ -20,6 +28,7 @@ const Register = () => {
           .then(function (response) {
             console.log(response);
             message.success("register successfully!");
+            goto(RouterPath.Login);
           })
           .catch(function (error) {
             console.log(error);
