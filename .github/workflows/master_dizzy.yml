@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: ./build
+          path: ./webpack-test
 
   deploy:
     runs-on: ubuntu-latest
@@ -55,4 +55,4 @@ jobs:
           app-name: 'dizzy'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D9C2A7357C344A7599BD1048E7916860 }}
-          package: ./build
+          package: ./webpack-test
