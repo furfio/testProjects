@@ -35,4 +35,4 @@ jobs:
           app-name: 'dizzy'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1BD9DC088A884E95BF317909EF6E265D }}
-          package: ./webpack-test
+          package: ./webpack-test/build
