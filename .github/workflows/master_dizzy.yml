@@ -23,15 +23,16 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+          cd ./webpack-test
+          yarn install
+          yarn build
+          yarn test
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: ./webpack-test
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,4 +54,4 @@ jobs:
           app-name: 'dizzy'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F9F20D67F9F14FD2BB54A10D35EB6F8A }}
-          package: .
+          package: ./webpack-test
